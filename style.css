@@ -8,3 +8,45 @@ body {
     background-color: pink;
 
 }
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    flex-direction: column; /* Cambia a diseño vertical */
+    padding: 10px;
+  }
+
+  .item {
+    width: 100%; /* Las imágenes ocupan todo el ancho */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Ajusta el tamaño de los títulos */
+  }
+
+  p {
+    font-size: 0.9em; /* Reduce el tamaño del texto */
+  }
+}
