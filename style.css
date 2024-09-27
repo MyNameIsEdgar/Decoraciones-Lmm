@@ -1,97 +1,62 @@
-/* Estilos generales */
+/* General */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Fondo claro */
-    color: #333; /* Texto en tono gris oscuro */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-}
-
-/* Encabezado */
-header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5em;
-    color: #333;
+/* Estilo para el encabezado */
+header {
+    background-color: #6e9fcb;
+    padding: 20px;
+    color: white;
 }
 
-header p {
-    font-size: 1.2em;
-    color: #777;
+h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
-/* Sección de decorados */
-.decorados {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño adaptable */
-    gap: 20px;
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.decorado-item {
+/* Estilo para las secciones de paquetes */
+.paquete {
     background-color: #fff;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación sutil */
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.decorado-item:hover {
-    transform: scale(1.05); /* Zoom ligero al pasar el cursor */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+h2 {
+    font-size: 24px;
+    color: #6e9fcb;
 }
 
-.decorado-item img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.decorado-item h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.decorado-item p {
-    font-size: 1em;
-    color: #555;
-}
-
-/* Botón de acción */
 .boton {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff6b6b; /* Color llamativo */
+    background-color: #6e9fcb;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .boton:hover {
-    background-color: #ff5252; /* Efecto de hover */
+    background-color: #4a7c9b;
 }
 
 /* Pie de página */
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
+    padding: 10px 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
