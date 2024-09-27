@@ -1,109 +1,86 @@
-/* Estilos generales */
+/* Estilos Generales */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #111; /* Fondo oscuro moderno */
-    color: #fff; /* Texto en blanco para mejor contraste */
-    overflow-x: hidden;
-}
-
-h1 {
-    font-size: 2.5rem;
     text-align: center;
-    margin-top: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    background: linear-gradient(90deg, #39FF14, #00FFFF);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-radius: 30px;
-    background-color: #39FF14;
-    box-shadow: 0 0 10px #39FF14, 0 0 20px #00FFFF;
-    display: inline-block;
-    margin: 10px auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #39FF14, 0 0 40px #00FFFF, 0 0 60px #39FF14;
 }
 
 /* Encabezado */
 header {
-    background-color: #1a1a1a;
+    background-color: #2a9d8f; /* Color vibrante para el encabezado */
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 255, 127, 0.3);
 }
 
 header h1 {
-    color: #00FFFF;
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Botones principales */
-a {
-    background-color: #39FF14; /* Botones neón verde */
-    color: #111; /* Contraste con el fondo oscuro */
-    font-size: 1.2rem;
-    transition: 0.3s ease;
-}
-
-a:hover {
-    background-color: #00FFFF; /* Cambia a neón azul al pasar el mouse */
-    color: #111;
-}
-
-/* Sección de paquetes */
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 40px 0;
+/* Contenedor de Paquetes */
+.paquetes {
+    max-width: 1000px;
+    margin: 40px auto;
     padding: 20px;
 }
 
-section h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.paquete {
+    background-color: #ffffff;
+    color: #2a9d8f;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 255, 127, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Adaptabilidad móvil */
+.paquete:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 255, 127, 0.5), 0 10px 30px rgba(0, 255, 255, 0.3);
+}
+
+/* Botones de Comprar */
+.paquete a {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #2a9d8f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.paquete a:hover {
+    background-color: #00ffff;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #2a9d8f, 0 0 45px #ffffff;
+}
+
+/* Adaptabilidad para móviles */
 @media (max-width: 768px) {
-    h1 {
+    .paquete {
+        padding: 15px;
+    }
+
+    header h1 {
         font-size: 2rem;
     }
 
-    a {
-        font-size: 1rem;
+    .paquete a {
         padding: 10px 20px;
     }
-
-    section {
-        padding: 10px;
-    }
 }
 
-/* Pie de página */
+/* Pie de Página */
 footer {
-    background-color: #1a1a1a;
-    padding: 20px;
+    background-color: #2a9d8f;
+    padding: 10px;
+    color: #fff;
     text-align: center;
-    color: #00FFFF;
-    border-top: 2px solid #39FF14;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1rem;
+    margin-top: 20px;
 }
